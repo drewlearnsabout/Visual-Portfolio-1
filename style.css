@@ -1,0 +1,321 @@
+/*
+
+font-family: 'Kulim Park', sans-serif;
+font-family: 'Poiret One', cursive;
+
+*/
+
+html {
+    background: linear-gradient(180deg, rgb(231, 231, 231) 0%, rgba(255, 255, 255, 0.829) 100%), #FFFFFF;
+}
+body {
+    max-height: 100vh;
+    margin: 0 auto;
+}
+main {
+    height: 63.5%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+h1 {
+    color: #232323;
+    font-family: 'Poiret One', cursive;
+    font-weight: normal;
+    font-size: 4.5vw;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.144);
+}
+h1 span {
+    font-weight: bold;
+}
+h1 #rotate:before {
+    content: '';
+    animation: textRotation infinite 15s;
+}
+
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px rgb(219, 219, 219);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(124, 154, 252);
+    
+}
+
+/* NAVBAR */
+
+nav {
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    font-family: 'Kulim Park', sans-serif;
+}
+nav div {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: right;
+    align-items: center;
+}
+nav div a {
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.2s;
+    text-decoration: none;
+    justify-self: center;
+}
+nav div a:hover {
+    font-weight: bold;
+    color: white;
+}
+.logo {
+    justify-self: start;
+}
+#line {
+    grid-column: 1 / 3;
+    height: 1px;
+    background: black;
+    margin-top: 2vh;
+}
+
+
+
+
+/* FOOTER */
+#toggleDisplay {
+    transform: translateY(70px);
+}
+#toggleArrow:hover {
+    color: white;
+}
+#footer {
+    display: none;
+    margin: 0 auto;
+    font-family: 'Poiret One', cursive;
+    background-color: #272727;
+    grid-template-columns: 10% 15% 50% 15% 10%;
+    align-self: end;
+}
+
+.logo2 {
+    align-self: center;
+    justify-self: center;
+}
+#start {
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    width: 5vw;
+}
+#middleSection, #end {
+    font-size: 10px;
+    color: white;
+}
+#middleSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 3 / 4;
+}
+#middleSection a {
+    color: white;
+    text-decoration: none;
+}
+#end {
+    grid-column: 5 / 6;
+    align-self: start;
+}
+#footerArrow {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    z-index: 2;
+}
+#footerArrow p {
+    cursor: pointer;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.up {
+transform: rotate(-135deg);
+-webkit-transform: rotate(-135deg);
+}
+#explore p:hover, #contact p:hover, #follow p:hover {
+    text-decoration: underline;
+}
+
+
+/* ABOUT PAGE */
+
+#aboutMe {
+    max-height: 63.5vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+}
+#aboutMe h1, #aboutMe h3, #aboutMe p {
+    font-family: 'Kulim Park', sans-serif;
+    grid-column: 2 / 3;
+}
+#aboutMe h1, #aboutMe h3 {
+    font-weight: bold;
+}
+#aboutMe h1 { 
+    grid-row: 1 / 2;
+    font-family: 'Poiret One', cursive;
+}
+#aboutMe h3 { grid-row: 2 / 3;}
+#aboutMe p { 
+    grid-row: 3 / 4;
+    font-size: 1.1em;
+}
+
+/* SKILLS PAGE */
+#skills {
+    max-height: 63.5vh;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto auto auto;
+}
+#skills h1, #tools, #skillsets {
+    grid-column: 2 / 3;
+}
+#skills h1 {
+    grid-row: 1 / 2;
+}
+#tools {
+    justify-self: center;
+    text-align: center;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 2vw;
+    grid-row: 2 / 3;
+}
+#skillsets {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#toolIcons img {
+    width: 25vw;
+}
+#skillsets img {
+    width: 4vw;
+}
+
+
+
+
+
+@keyframes textRotation {
+    3.55% {
+        opacity: 0;
+    }
+    7.1% {
+        opacity: 1;
+    }
+    10.65% {
+        opacity: 1;
+    }
+    14.2% {
+        content: 'Visual Designer.';
+        opacity: 1;
+    }
+    17.75% {
+        opacity: 0;
+    }
+    21.3% {
+        opacity: 0;
+    }
+    24.85% {
+        opacity: 1;
+    }
+    28.4% {
+        content: 'Web Designer.';
+        opacity: 1;
+    }
+    31.95% {
+        opacity: 0;
+    }
+    35.5% {
+        opacity: 0;
+    }
+    39.05% {
+        opacity: 1;
+    }
+    42.6% {
+        content: 'Father.';
+        opacity: 1;
+    }
+    46.15% {
+        opacity: 0;
+    }
+    49.7% {
+        opacity: 0;
+    }
+    53.25% {
+        opacity: 1;
+    }
+    56.8% {
+        content: 'Gamer.';
+        opacity: 1;
+    }
+    60.35% {
+        opacity: 0;
+    }
+    63.9% {
+        opacity: 0;
+    }
+    67.45% {
+        opacity: 1;
+    }
+    71% {
+        content: 'Kombucha Fermenter.';
+        opacity: 1;
+    }
+    74.55% {
+        opacity: 0;
+    }
+    78.1% {
+        opacity: 0;
+    }
+    81.65% {
+        opacity: 1;
+    }
+    85.2% {
+        content: 'Sourdough Baker.';
+        opacity: 1;
+    }
+    88.75% {
+        opacity: 0;
+    }
+    92.3% {
+        opacity: 0;
+    }
+    95.85% {
+        opacity: 1;
+    }
+    99.4% {
+        content: 'BBQ Enthusiast.';
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 640px) {
+    main {
+        max-width: none;
+    }
+}
