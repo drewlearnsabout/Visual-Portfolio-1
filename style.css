@@ -16,6 +16,11 @@ main {
     height: 63.5%;
     display: grid;
     grid-template-columns: 10% 80% 10%;
+    opacity: 0;
+    animation-name: iconFade2;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
 h1 {
     color: #232323;
@@ -32,20 +37,21 @@ h1 span {
 h1 #rotate:before {
     content: '';
     animation: textRotation infinite 15s;
+    animation-delay: 0.9s;
 }
 
 
 /* SCROLL BAR */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 3px;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
     box-shadow: inset 0 0 5px rgb(219, 219, 219);
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(124, 154, 252);
+    background: rgb(89, 89, 90);
     
 }
 
@@ -102,7 +108,6 @@ nav div a:hover {
     grid-template-columns: 10% 15% 50% 15% 10%;
     align-self: end;
 }
-
 .logo2 {
     align-self: center;
     justify-self: center;
@@ -134,7 +139,6 @@ nav div a:hover {
     display: grid;
     justify-items: center;
     position: relative;
-    z-index: 2;
 }
 #footerArrow p {
     cursor: pointer;
@@ -174,48 +178,138 @@ transform: rotate(-135deg);
 #aboutMe h1 { 
     grid-row: 1 / 2;
     font-family: 'Poiret One', cursive;
+    opacity: 0;
+    animation-name: iconFade2;
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
-#aboutMe h3 { grid-row: 2 / 3;}
+#aboutMe h3 {
+    grid-row: 2 / 3;
+    opacity: 0;
+    animation-name: iconFade;
+    animation-delay: 0.7s;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
 #aboutMe p { 
     grid-row: 3 / 4;
     font-size: 1.1em;
+    opacity: 0;
+    animation-name: iconFade;
+    animation-delay: 0.9s;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
 }
 
 /* SKILLS PAGE */
 #skills {
     max-height: 63.5vh;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 15% 85%;
 }
-#skills h1, #tools, #skillsets {
-    grid-column: 2 / 3;
-}
+
 #skills h1 {
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: center;
+    opacity: 0;
+    animation-name: iconFade2;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
 }
 #tools {
     justify-self: center;
     text-align: center;
-    font-family: 'Kulim Park', sans-serif;
+    font-family: 'Poiret One', cursive;
     font-size: 2vw;
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
-}
-#skillsets {
-    grid-row: 3 / 4;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 0%;
+    opacity: 0;
+    animation-name: iconFade;
+    animation-duration: 0.3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+#tools h3 {
+    font-size: 24px;
+}
+#toolIcons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px 10px;
 }
 #toolIcons img {
-    width: 25vw;
+    width: 3.5vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.411);
+    transition-duration: 0.2s;
+}
+#toolIcons img:hover {
+    transform: scale(1.2);
+}
+#skillsets {
+    font-family: 'Poiret One', cursive;
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    opacity: 0;
+    animation-name: iconFade3;
+    animation-delay: 0.7s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+#skillsets h2 {
+    font-size: 24px;
+}
+#skillsets p {
+    font-family: 'Kulim Park', sans-serif;
 }
 #skillsets img {
-    width: 4vw;
+    width: 2.5vw;
+    align-self: end;
 }
 
 
 
+@keyframes iconFade {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes iconFade3 {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
+@keyframes iconFade2 {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 @keyframes textRotation {
     3.55% {
