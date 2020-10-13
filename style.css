@@ -95,10 +95,11 @@ nav div a:hover {
 
 /* FOOTER */
 #toggleDisplay {
-    transform: translateY(70px);
-}
-#toggleArrow:hover {
-    color: white;
+    opacity: 0;
+    animation-name: iconFade4;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 #footer {
     display: none;
@@ -107,6 +108,8 @@ nav div a:hover {
     background-color: #272727;
     grid-template-columns: 10% 15% 50% 15% 10%;
     align-self: end;
+    position: relative;
+    z-index: 2;
 }
 .logo2 {
     align-self: center;
@@ -136,6 +139,7 @@ nav div a:hover {
     align-self: start;
 }
 #footerArrow {
+    transform: translateY(60px);
     display: grid;
     justify-items: center;
     position: relative;
@@ -153,7 +157,7 @@ nav div a:hover {
 transform: rotate(-135deg);
 -webkit-transform: rotate(-135deg);
 }
-#explore p:hover, #contact p:hover, #follow p:hover {
+#explore p:hover, #contactFooter p:hover, #follow p:hover {
     text-decoration: underline;
 }
 
@@ -215,6 +219,7 @@ transform: rotate(-135deg);
     grid-column: 3 / 4;
     align-self: center;
     justify-self: center;
+    font-weight: bold;
     opacity: 0;
     animation-name: iconFade2;
     animation-duration: 1s;
@@ -277,6 +282,148 @@ transform: rotate(-135deg);
     align-self: end;
 }
 
+/* PROJECTS PAGE*/
+
+#projects {
+    height: 63.5vh;
+    font-family: 'Poiret One', cursive;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 15vh auto;
+}
+#projects h1 {
+    font-size: 4vw;
+    justify-self: center;
+    grid-row: 1 / 2;
+    font-weight: bold;
+    opacity: 0;
+    animation-name: iconFade2;
+    animation-delay: 0.1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#complexGrid {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 5vw auto auto auto 5vw;
+    grid-template-rows: auto auto;
+    column-gap: 4vw;
+}
+#dualGrid {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 23vh auto;
+    opacity: 0;
+    animation-name: iconFade3;
+    animation-delay: 0.7s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+#publications div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7px;
+}
+#publications img {
+    width: 15vw;
+}
+#visualsDesign img {
+    width: 8vw;
+}
+#visualsDesign div {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+}
+#websitesVideos {
+    grid-column: 3 / 4;
+    opacity: 0;
+    animation-name: iconFade3;
+    animation-delay: 0.9s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+#websitesVideos div{
+    display: grid;
+    gap: 10px;
+}
+#websitesVideos img {
+    width: 15vw;
+}
+#prototypes {
+    grid-column: 4 / 5;
+    opacity: 0;
+    animation-name: iconFade3;
+    animation-delay: 1.1s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+#prototypes img {
+    width: 5vw;
+}
+#prototypes div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+}
+
+/* CONTACT PAGE */
+
+#contact {
+    height: 63.5vh;
+    font-family: 'Poiret One', cursive;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 30% auto;
+}
+#contact h1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+form {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+#contactMenuGrid {
+    display: grid;
+    font-size: 1.2vw;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 12fr 2fr 4fr 12fr;
+    grid-template-rows: repeat(auto, 7);
+    grid-template-areas:
+        ". formName nameBox ."
+        ". formEmail emailBox ."
+        ". formNumber numberBox ."
+        ". formMessage formMessage ."
+        ". textBox textBox ."
+        ". submit submit .";
+    column-gap: 1vw;
+}
+#formName { grid-area: formName;}
+#formEmail { grid-area: formEmail;}
+#formNumber { grid-area: formNumber;}
+#formMessage { 
+    grid-area: formMessage;
+    justify-self: start;
+}
+#nameBox { grid-area: nameBox;}
+#emailBox { grid-area: emailBox;}
+#numberBox { grid-area: numberBox;}
+#textBox {
+    height: 9vh;
+    width: 18.5vw;
+    grid-area: textBox;
+    justify-self: start;
+    background: #E7E7E7;
+    box-shadow: inset 0px 1px 4px gray;
+}
+#submit {
+    margin: 2vh 2vw;
+    grid-area: submit;
+    background-color: #00034A;
+    color: #ffffff;
+}
 
 
 @keyframes iconFade {
@@ -304,6 +451,16 @@ transform: rotate(-135deg);
     0% {
         opacity: 0;
         transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes iconFade4 {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
     }
     100% {
         opacity: 1;
