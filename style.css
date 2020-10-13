@@ -45,6 +45,20 @@ h1 #rotate:before {
     animation-delay: 0.9s;
 }
 
+/* SECTIONS */
+
+.sections {
+    height: 80%;
+    display: grid;
+    grid-template-rows: 90% 10%; 
+}
+.firstSection {
+    align-self: center;
+}
+.secondSection {
+    align-self: start;
+}
+
 
 /* SCROLL BAR */
 
