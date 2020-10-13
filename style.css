@@ -82,7 +82,7 @@ nav {
     grid-template-columns: 50% 50%;
     font-family: 'Kulim Park', sans-serif;
 }
-nav div {
+#navbar {
     display: grid;
     grid-template-columns: repeat(4, 20%);
     justify-content: right;
@@ -444,6 +444,20 @@ form {
     color: #ffffff;
 }
 
+/* Responsive View */
+
+@media only screen and (max-width: 750px) {
+    #navbar {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    nav div a {
+        justify-self: end;
+        padding: 0 5px;
+    }
+}
+
+/* Animations */
 
 @keyframes iconFade {
     0% {
