@@ -50,7 +50,7 @@ h1 #rotate:before {
 .sections {
     height: 80%;
     display: grid;
-    grid-template-rows: 90% 10%; 
+    grid-template-rows: 80% 20%; 
 }
 .firstSection {
     align-self: center;
@@ -345,9 +345,11 @@ transform: rotate(-135deg);
 }
 #publications img {
     width: 15vw;
+    transition-duration: 0.3s;
 }
 #visualsDesign img {
     width: 8vw;
+    transition-duration: 0.3s;
 }
 #visualsDesign div {
     display: grid;
@@ -367,6 +369,7 @@ transform: rotate(-135deg);
 }
 #websitesVideos img {
     width: 15vw;
+    transition-duration: 0.3s;
 }
 #prototypes {
     grid-column: 4 / 5;
@@ -378,12 +381,27 @@ transform: rotate(-135deg);
 }
 #prototypes img {
     width: 5vw;
+    transition-duration: 0.3s;
 }
 #prototypes div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     gap: 20px;
+}
+#publications img:hover, #visualsDesign img:hover, #websitesVideos img:hover, #prototypes img:hover {
+    transform: scale(1.1);
+}
+#instagramVideo {
+    display: none;
+    width: 35vw;
+    height: 45vh;
+    position: fixed;
+    border: none;
+    background-color: rgba(0,0,0,0.4);
+    left: 33%;
+    top: 25%;
+    z-index: 1;
 }
 
 /* CONTACT PAGE */
@@ -454,6 +472,27 @@ form {
     nav div a {
         justify-self: end;
         padding: 0 5px;
+    }
+    h1 {
+        font-size: 3.3em;
+    }
+    #footer {
+        grid-template-columns: auto;
+        grid-template-rows: 20% 60% 20%;
+    }
+    #footer img {
+        width: 50%;
+    }
+    #middleSection {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 2 / 3;
+    }
+    .logo2 {
+        grid-row: 1 / 2;
+    }
+    #end {
+        grid-row: 3 / 4;
     }
 }
 

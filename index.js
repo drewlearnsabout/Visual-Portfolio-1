@@ -11,3 +11,14 @@ function toggle() {
     y.style.transform = "rotate(-135deg)";
   }
 }
+
+var modal = document.getElementById("instagramVideo");
+var btn = document.getElementById("brandingVideoButton");
+btn.onclick = function() {
+  modal.style.display = "grid";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
