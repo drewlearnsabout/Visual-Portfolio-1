@@ -510,11 +510,11 @@ form {
         font-size: 4.7em;
     }
     #footer {
-        grid-template-columns: 5% 85% 10%;
+        grid-template-columns: 10% 50% 30% 10%;
         grid-template-rows: 30% 70%;
     }
     #footer img {
-        width: 50%;
+        width: 90%;
     }
     .logo2 {
         align-self: center;
@@ -531,6 +531,9 @@ form {
     #end {
         grid-row: 2 / 3;
         grid-column: 3 / 4;
+    }
+    #explore, #location, #contactFooter, #follow  {
+        font-size: 1.5em;
     }
 
     /* Main Page - Mobile */
