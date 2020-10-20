@@ -533,6 +533,11 @@ form {
         grid-column: 3 / 4;
     }
 
+    /* Main Page - Mobile */
+    #rotate  {
+        font-size: 10vw;
+    }
+
     /* About Page - Mobile */
     #aboutMe {
         grid-template-columns: 5% 90% 5%;
