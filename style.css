@@ -308,7 +308,7 @@ transform: rotate(-135deg);
     font-family: 'Poiret One', cursive;
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 15vh auto;
+    grid-template-rows: 17vh auto;
 }
 #projects h1 {
     font-size: 4vw;
@@ -407,26 +407,28 @@ transform: rotate(-135deg);
 /* CONTACT PAGE */
 
 #contact {
-    height: 63.5vh;
+    height: 70vh;
     font-family: 'Poiret One', cursive;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 25% 50% 25%;
     grid-template-rows: 30% auto;
 }
 #contact h1 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    justify-self: center;
 }
 form {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
 }
 #contactMenuGrid {
+    width: 100%;
     display: grid;
     font-size: 1.2vw;
     align-items: center;
     justify-items: center;
-    grid-template-columns: 12fr 2fr 4fr 12fr;
+    grid-template-columns: 10fr 2fr 8fr 10fr;
     grid-template-rows: repeat(auto, 7);
     grid-template-areas:
         ". formName nameBox ."
@@ -449,17 +451,31 @@ form {
 #numberBox { grid-area: numberBox;}
 #textBox {
     height: 9vh;
-    width: 18.5vw;
+    width: 100%;
     grid-area: textBox;
     justify-self: start;
-    background: #E7E7E7;
+    background: #ffffff;
+    border: none;
+    border-radius: 4px;
     box-shadow: inset 0px 1px 4px gray;
 }
+.formInput {
+    height: 4vh;
+    box-shadow: inset 0px 1px 4px gray;
+    border: none;
+    border-radius: 4px;
+}
 #submit {
+    font-family: 'Kulim Park', sans-serif;
+    font-weight: bold;
+    height: 5vh;
+    padding: 0 2vw;
     margin: 2vh 2vw;
     grid-area: submit;
-    background-color: #00034A;
+    background-color: #18bd09;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.486);
     color: #ffffff;
+    border-radius: 4px;
 }
 
 /* Responsive View */
@@ -471,6 +487,8 @@ form {
 }
 
 @media only screen and (max-width: 750px) {
+    
+    /* Body, Navbar & Footer */
     body {
         max-height: none;
     }
@@ -512,9 +530,13 @@ form {
         grid-row: 2 / 3;
         grid-column: 3 / 4;
     }
+
+    /* About Page - Mobile */
     #aboutMe {
         grid-template-columns: 5% 90% 5%;
     }
+
+    /* Skills Page - Mobile */
     #skills {
         min-height: auto;
         grid-template-columns: 20% 20% 20% 20% 20%;
@@ -543,6 +565,58 @@ form {
     }
     #skillsets img {
         width: 5vw;
+    }
+
+    /* Projects Page - Mobile */
+    #projects {
+        width: 100%;
+    }
+    #projects h1 {
+        font-size: 10vw;
+    }
+    #complexGrid {
+        width: 100%;
+        grid-row: 2 / 3;
+        display: grid;
+        column-gap: 0vw;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+    }
+    #dualGrid {
+        grid-column: 1 / 2;
+        grid-template-rows: 45vh auto;
+    }
+    #websitesVideos {
+        grid-column: 1 / 2;
+    }
+    #prototypes {
+        grid-column: 1 / 2;
+    }
+    #publications img {
+        width: 70vw;
+    }
+    #publications div {
+        grid-template-columns: auto;
+        column-gap: 0px;
+        row-gap: 10px;
+    }
+    #visualsDesign img {
+        width: 50vw;
+    }
+    #visualsDesign div {
+        grid-template-columns: auto;
+        row-gap: 3vh;
+    }
+
+    /* Contact Page - Mobile */
+    #contact h1 {
+        font-size: 14vw;
+    }
+    .formText {
+        font-size: 5vw;
+    }
+    #submit {
+        font-size: 4vw;
     }
 }
 
