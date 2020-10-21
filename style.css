@@ -4,6 +4,11 @@ font-family: 'Kulim Park', sans-serif;
 font-family: 'Poiret One', cursive;
 
 */
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
 
 html {
     background: linear-gradient(180deg, rgb(231, 231, 231) 0%, rgba(255, 255, 255, 0.829) 100%), #FFFFFF;
