@@ -488,10 +488,6 @@ form {
     body {
         max-height: none;
     }
-    .sections {
-        height: 80%;
-        grid-template-rows: 95% 5%; 
-    }
     #navbar {
         grid-template-columns: auto;
         grid-template-rows: repeat(4, 1fr);
@@ -499,9 +495,6 @@ form {
     nav div a {
         justify-self: end;
         padding: 0 5px;
-    }
-    #wholeFooter {
-        align-self: end;
     }
     #footer {
         grid-template-columns: 10% 50% 30% 10%;
@@ -549,13 +542,11 @@ form {
 
     /* About Page - Mobile */
     #aboutMe {
-        max-height: 65.5vh;
         grid-template-columns: 5% 90% 5%;
     }
 
     /* Skills Page - Mobile */
     #skills {
-        max-height: 65.5vh;
         min-height: auto;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: repeat(3, auto);
@@ -588,7 +579,7 @@ form {
 
     /* Projects Page - Mobile */
     #projects {
-        max-height: 65.5vh;
+        height: 63.5vh;
         width: 100vw;
         overflow: scroll;
         overflow-x: hidden;
@@ -611,7 +602,7 @@ form {
     }
     #dualGrid {
         grid-column: 1 / 2;
-        grid-template-rows: 65vh auto;
+        grid-template-rows: 54vh auto;
     }
     #websitesVideos {
         grid-column: 1 / 2;
@@ -632,7 +623,7 @@ form {
     #publications div {
         grid-template-columns: auto;
         column-gap: 0px;
-        row-gap: 10px;
+        row-gap: 30px;
     }
     #visualsDesign img {
         width: 90vw;
