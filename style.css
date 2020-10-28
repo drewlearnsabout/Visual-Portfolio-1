@@ -602,7 +602,7 @@ form {
     }
     #dualGrid {
         grid-column: 1 / 2;
-        grid-template-rows: 54vh auto;
+        grid-template-rows: 20% auto;
     }
     #websitesVideos {
         grid-column: 1 / 2;
