@@ -122,13 +122,15 @@ nav div a:hover {
     animation-fill-mode: forwards;
 }
 #footer {
+    width: 100%;
     display: none;
     margin: 0 auto;
     font-family: 'Poiret One', cursive;
     background-color: #272727;
     grid-template-columns: 10% 15% 50% 15% 10%;
     align-self: end;
-    position: relative;
+    position: fixed;
+    bottom: 0;
     z-index: 2;
 }
 .logo2 {
@@ -481,6 +483,13 @@ form {
 }
 
 /* Responsive View */
+/*
+@media only screen and (max-width: 1280px) {
+    #websitesVideos img, #publications img, #visualsDesign img {
+          
+    }
+}
+*/
 
 @media only screen and (max-width: 750px) {
     
@@ -499,6 +508,8 @@ form {
     #footer {
         grid-template-columns: 10% 50% 30% 10%;
         grid-template-rows: 30% 70%;
+        position: relative;
+        bottom: 0;
     }
     #footer img {
         width: 90%;
