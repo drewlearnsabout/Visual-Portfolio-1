@@ -507,7 +507,41 @@ form {
 }
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-height: 1024px) {
+    /* Body, Navbar, Footer */
+    .sections {
+        height: 80%;
+        display: grid;
+        grid-template-rows: 90% 10%; 
+    }
+
+    /* Skills Page */
+    #skills {
+        max-height: 63.5vh;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 15% 85%;
+    }
+    
+    #skills h1 {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+    }
+    #tools {
+        font-size: 2vw;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    #tools h3 {
+        font-size: 24px;
+    }
+    #skillsets {
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
     
     /* Body, Navbar & Footer */
     body {
@@ -520,6 +554,7 @@ form {
     nav div a {
         justify-self: end;
         padding: 0 5px;
+        font-size: 4vw;
     }
     #footer {
         grid-template-columns: 10% 50% 30% 10%;
