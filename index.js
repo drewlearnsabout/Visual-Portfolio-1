@@ -12,17 +12,6 @@ function toggle() {
   }
 }
 
-var modal = document.getElementById("instagramVideo");
-var btn = document.getElementById("brandingVideoButton");
-btn.onclick = function() {
-  modal.style.display = "grid";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 document.body.classList.add('js-loading');
 
 window.addEventListener("load", showPage);

@@ -483,13 +483,29 @@ form {
 }
 
 /* Responsive View */
-/*
+
+
 @media only screen and (max-width: 1280px) {
-    #websitesVideos img, #publications img, #visualsDesign img {
-          
+    /* Home Page */
+    h1 {
+        font-size: 5.5vw;
+    }
+
+    /* Projects Page */
+    #websitesVideos img {
+        width: 15vw;
+    }
+    #publications img {
+        width: 20vw;
+    }
+    #visualsDesign img {
+        width: 12vw;
+    }
+    #visualsDesign div {
+        column-gap: 2vw;
     }
 }
-*/
+
 
 @media only screen and (max-width: 750px) {
     
