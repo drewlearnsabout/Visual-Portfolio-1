@@ -4,7 +4,7 @@ function toggle() {
   if (x.style.display === "none") {
     x.style.display = "grid";
     x.style.transitionDuration = "1s";
-    y.style.transform = "translateY(-70px) rotate(45deg) scale(1.2)";
+    y.style.transform = "translateY(-110px) rotate(45deg) scale(1.2)";
     y.style.transitionDuration = "0.3s";
   } else {
     x.style.display = "none";
