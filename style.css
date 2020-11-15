@@ -312,6 +312,7 @@ transform: rotate(-135deg);
     display: grid;
     grid-template-columns: 5% 90% 5%;
     grid-template-rows: 17vh auto;
+    overflow-y: scroll;
 }
 #projects h1 {
     font-size: 4vw;
@@ -328,19 +329,13 @@ transform: rotate(-135deg);
 #complexGrid {
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 5vw auto auto auto 5vw;
-    grid-template-rows: auto auto;
+    grid-template-columns: 15vw auto auto auto 15vw;
+    grid-template-rows: repeat(4, auto);
     column-gap: 4vw;
 }
-#dualGrid {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-rows: 23vh auto;
-    opacity: 0;
-    animation-name: iconFade3;
-    animation-delay: 0.7s;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
+#publications {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
 }
 #publications div {
     display: grid;
@@ -348,19 +343,24 @@ transform: rotate(-135deg);
     column-gap: 7px;
 }
 #publications img {
-    width: 15vw;
+    width: 30vw;
     transition-duration: 0.3s;
 }
+#visualsDesign {
+    grid-column: 2 / 5;
+    grid-row: 4 / 5;
+}
 #visualsDesign img {
-    width: 8vw;
+    width: 30vw;
     transition-duration: 0.3s;
 }
 #visualsDesign div {
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(2, 50%);
 }
 #websitesVideos {
-    grid-column: 3 / 4;
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
     opacity: 0;
     animation-name: iconFade3;
     animation-delay: 0.9s;
@@ -369,14 +369,16 @@ transform: rotate(-135deg);
 }
 #websitesVideos div{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 #websitesVideos img {
-    width: 15vw;
+    width: 30vw;
     transition-duration: 0.3s;
 }
 #prototypes {
-    grid-column: 4 / 5;
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
     opacity: 0;
     animation-name: iconFade3;
     animation-delay: 1.1s;
@@ -384,7 +386,7 @@ transform: rotate(-135deg);
     animation-fill-mode: forwards;
 }
 #prototypes img {
-    width: 5vw;
+    width: 25vw;
     transition-duration: 0.3s;
 }
 #prototypes div {
@@ -394,7 +396,7 @@ transform: rotate(-135deg);
     gap: 20px;
 }
 #publications img:hover, #visualsDesign img:hover, #websitesVideos img:hover, #prototypes img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05) translateY(-5px);
 }
 #instagramVideo {
     display: none;
@@ -548,8 +550,9 @@ form {
         max-height: none;
     }
     #navbar {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        column-gap: 3vw;
     }
     nav div a {
         justify-self: end;
@@ -655,28 +658,26 @@ form {
         grid-column: 2 / 3;
         display: grid;
         column-gap: 0vw;
-        grid-template-columns: auto;
+        grid-template-columns: 0vw auto auto auto 0vw;
         grid-template-rows: repeat(3, auto);
     }
     #complexGrid h3 {
         font-size: 10vw;
         text-align: center;
     }
-    #dualGrid {
-        grid-column: 1 / 2;
-        grid-template-rows: 20% auto;
-    }
     #websitesVideos {
         grid-column: 1 / 2;
     }
     #websitesVideos div{
         gap: 10px;
+        grid-template-columns: 1fr;
     }
     #websitesVideos img {
         width: 90vw;
         transition-duration: 0.3s;
     }
     #prototypes {
+        justify-items: center;
         grid-column: 1 / 2;
     }
     #publications img {
@@ -701,7 +702,7 @@ form {
         row-gap: 4vh;
     }
     #prototypes img {
-        width: 60vw;
+        width: 90vw;
     }
 
     /* Contact Page - Mobile */
