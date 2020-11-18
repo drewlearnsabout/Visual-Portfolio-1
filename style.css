@@ -19,7 +19,7 @@ body {
 }
 main {
     height: 63.5%;
-    padding-top: 10vh;
+    margin-top: 10vh;
     display: grid;
     grid-template-columns: 10% 80% 10%;
     opacity: 0;
