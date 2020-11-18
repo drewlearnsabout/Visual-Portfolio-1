@@ -697,6 +697,9 @@ form {
     }
 
     /* Contact Page - Mobile */
+    #contact {
+        justify-items: center;
+    }
     #contact h1 {
         font-size: 14vw;
     }
