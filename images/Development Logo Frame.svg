@@ -1,0 +1,17 @@
+<svg width="110" height="98" viewBox="0 0 110 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<line x1="4" y1="-4" x2="34.1864" y2="-4" transform="matrix(0.74069 -0.671847 0.74069 0.671847 83.5688 74.1875)" stroke="#00AD98" stroke-width="8" stroke-linecap="round"/>
+<line x1="4" y1="-4" x2="34.1864" y2="-4" transform="matrix(-0.74069 -0.671847 0.74069 -0.671847 111.853 48.5322)" stroke="#00AD98" stroke-width="8" stroke-linecap="round"/>
+<rect x="-2.11338" y="0.183382" width="10.3951" height="29.9545" transform="matrix(-0.765587 -0.643332 -0.643332 0.765587 68.9987 35.927)" stroke="#00AD98" stroke-width="3"/>
+<path d="M74.4759 31.9169L67.2831 25.8728C66.8603 25.5175 66.2295 25.5722 65.8742 25.995L62.7564 29.7053L71.4804 37.0361L74.5981 33.3258C74.9534 32.903 74.8987 32.2722 74.4759 31.9169Z" stroke="#00AD98" stroke-width="2"/>
+<path d="M49.5097 62.1811L37.4309 68.6998L41.7716 55.6788L49.5097 62.1811Z" stroke="#00AD98" stroke-width="2"/>
+<path d="M35.6836 70.7789L41.5132 67.2224L38.1828 64.4238L35.6836 70.7789Z" fill="#00AD98"/>
+<line x1="4" y1="-4" x2="34.1864" y2="-4" transform="matrix(-0.74069 -0.671847 -0.74069 0.671847 27.2842 74.9307)" stroke="#00AD98" stroke-width="8" stroke-linecap="round"/>
+<line x1="4" y1="-4" x2="34.1864" y2="-4" transform="matrix(0.74069 -0.671847 -0.74069 -0.671847 -1 49.2754)" stroke="#00AD98" stroke-width="8" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="110" height="98" fill="white"/>
+</clipPath>
+</defs>
+</svg>
