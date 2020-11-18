@@ -601,7 +601,10 @@ form {
         display: none;
     }
     #mainParagraphTwo {
+        position: fixed;
+        top: 20%;
         display: initial;
+        font-size: 10vw;
     }
     h1 {
         font-size: 13vw;
