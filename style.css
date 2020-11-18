@@ -459,12 +459,11 @@ form {
 #submit {
     font-family: 'Kulim Park', sans-serif;
     font-weight: bold;
-    height: 5vh;
-    padding: 0 2vw;
+    height: 7vh;
+    padding: 0 5vw;
     margin: 2vh 2vw;
     grid-area: submit;
-    background-color: #18bd09;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.486);
+    background-color: #0da100;
     color: #ffffff;
     border-radius: 4px;
 }
@@ -706,6 +705,8 @@ form {
     }
     #submit {
         font-size: 4vw;
+        height: 7vh;
+        padding: 0 24vw;
     }
 }
 
