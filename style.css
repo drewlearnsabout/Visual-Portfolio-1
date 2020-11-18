@@ -546,6 +546,9 @@ form {
     body {
         max-height: none;
     }
+    nav {
+        padding-top: 10px;
+    }
     #navbar {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
