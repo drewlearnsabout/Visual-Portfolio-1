@@ -45,6 +45,9 @@ h1 #rotate:before {
     animation: textRotation infinite 15s;
     animation-delay: 0.9s;
 }
+#mainParagraphTwo {
+    display: none;
+}
 
 /* SECTIONS */
 
@@ -166,6 +169,16 @@ nav div a:hover {
 }
 #footerArrow p {
     cursor: pointer;
+}
+#doubletap {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 4vw;
+    animation-name: doubletap;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    display: none;
 }
 .arrow {
     border: solid black;
@@ -549,8 +562,14 @@ form {
         position: relative;
         bottom: 0;
     }
+    #footerArrow {
+        transform: translateY(40px);
+    }
     #footer img {
         width: 90%;
+    }
+    #doubletap {
+        display: initial;
     }
     .logo2 {
         align-self: center;
@@ -578,11 +597,17 @@ form {
         height: 100%;
         grid-template-columns: 5% 90% 5%;
     }
+    #mainParagraphOne {
+        display: none;
+    }
+    #mainParagraphTwo {
+        display: initial;
+    }
     h1 {
         font-size: 13vw;
     }
     #rotate  {
-        font-size: 13vw;
+        font-size: 10vw;
         display: table;
     }
     #bold {
@@ -715,6 +740,14 @@ form {
 
 /* Animations */
 
+@keyframes doubletap {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 @keyframes iconFade {
     0% {
         opacity: 0;
