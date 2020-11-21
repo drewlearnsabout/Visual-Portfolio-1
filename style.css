@@ -285,11 +285,6 @@ transform: rotate(-135deg);
     column-gap: 2vw;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto;
-    opacity: 0;
-    animation-name: iconFade3;
-    animation-delay: 0.7s;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
 }
 #skillsets h2 {
     font-size: 24px;
@@ -301,6 +296,27 @@ transform: rotate(-135deg);
 }
 #skillsets img {
     width: 4.5vw;
+}
+#designCard {
+    opacity: 0;
+    animation-name: iconFade5;
+    animation-delay: 0.7s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+#developmentCard {
+    opacity: 0;
+    animation-name: iconFade5;
+    animation-delay: 0.8s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+#behaviorCard {
+    opacity: 0;
+    animation-name: iconFade5;
+    animation-delay: 0.9s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
 #visualGraphDisplay {
     font-family: 'Poiret One', cursive;
