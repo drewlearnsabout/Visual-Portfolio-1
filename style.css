@@ -783,9 +783,13 @@ form {
     /* Contact Page - Mobile */
     #contact {
         justify-items: center;
+        height: 70vh;
+        grid-template-rows: 20% auto;
     }
     #contact h1 {
-        font-size: 14vw;
+        font-size: 11vw;
+    }
+    #contactMenuGrid {
     }
     .formText {
         font-size: 5vw;
@@ -793,7 +797,7 @@ form {
     #submit {
         font-size: 4vw;
         height: 7vh;
-        padding: 0 24vw;
+        padding: 0 21vw;
     }
 }
 
