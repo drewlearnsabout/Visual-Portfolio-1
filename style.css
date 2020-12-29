@@ -49,6 +49,48 @@ h1 #rotate:before {
     display: none;
 }
 
+/* Home background fading display */
+
+#forestStump {
+    width: 100%;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+    animation-name: forest;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+#forestStump2 {
+    display: none;
+}
+#meBaby {
+    width: 100%;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+    animation-name: baby;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+#meBaby2 {
+    display: none;
+}
+#sourdough {
+    width: 100%;
+    opacity: 1;
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+    animation-name: sourdough;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+#sourdough2 {
+    display: none;
+}
+
 /* SECTIONS */
 
 .sections {
@@ -173,6 +215,7 @@ nav div a:hover {
 #doubletap {
     font-family: 'Kulim Park', sans-serif;
     font-size: 1vw;
+    font-weight: bold;
     animation-name: doubletap;
     opacity: 0;
     animation-duration: 1s;
@@ -587,7 +630,47 @@ form {
     body {
         max-height: none;
     }
-
+    /* Mobile - home background slideshow display */
+    #forestStump {
+        display: none;
+    }
+    #forestStump2 {
+        display: initial;
+        position: fixed;
+        z-index: -1;
+        height: 100vh;
+        opacity: .5;
+        animation-name: forest;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+    #meBaby {
+        display: none;
+    }
+    #meBaby2 {
+        display: initial;
+        position: fixed;
+        z-index: -1;
+        height: 100%;
+        opacity: .5;
+        animation-name: baby;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+    #sourdough {
+        display: none;
+    }
+    #sourdough2 {
+        display: initial;
+        position: fixed;
+        z-index: -1;
+        height: 100%;
+        opacity: .5;
+        animation-name: sourdough;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+    
     nav {
         padding-top: 10px;
     }
@@ -875,7 +958,6 @@ form {
         transform: translateY(0);
     }
 }
-
 @keyframes textRotation {
     3.55% {
         opacity: 0;
@@ -967,6 +1049,72 @@ form {
     99.4% {
         content: 'BBQ Enthusiast.';
         opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+ @keyframes forest {
+     0% {
+         opacity: 0;
+     }
+     5% {
+         opacity: .5;
+     }
+     24% {
+         opacity: .5;
+     }
+     25% {
+         opacity: 0;
+     }
+     30% {
+        transform: scale(1.05);
+     }
+     100% {
+         opacity: 0;
+     }
+ }
+ @keyframes baby {
+    0% {
+        opacity: 0;
+    }
+    24% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .5;
+    }
+    49% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes sourdough {
+    0% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    74% {
+        opacity: .5;
+    }
+    75% {
+        opacity: 0;
+    }
+    80% {
+        transform: scale(1.5);
     }
     100% {
         opacity: 0;
