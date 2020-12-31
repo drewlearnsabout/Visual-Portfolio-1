@@ -66,6 +66,7 @@ h1 #rotate:before {
 }
 #meBaby {
     width: 100%;
+    background-position: center 70%;
     opacity: 0;
     overflow: hidden;
     position: fixed;
@@ -763,6 +764,7 @@ form {
     }
     #aboutMe p {
         grid-row: 4 / 5;
+        text-shadow: 1px 1px 1px rgb(121, 121, 121);
     }
 
     /* Skills Page - Mobile */
@@ -1068,7 +1070,7 @@ form {
          opacity: 0;
      }
      30% {
-        transform: scale(1.05);
+        transform: scale(1.05) translateX(-30px);
      }
      100% {
          opacity: 0;
@@ -1091,7 +1093,7 @@ form {
         opacity: 0;
     }
     55% {
-        transform: scale(1.2);
+        transform: scale(1.2) translateX(-30px);
     }
     100% {
         opacity: 0;
