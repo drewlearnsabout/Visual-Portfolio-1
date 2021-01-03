@@ -91,6 +91,19 @@ h1 #rotate:before {
 #sourdough2 {
     display: none;
 }
+#code {
+    width: 100%;
+    opacity: 1;
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+    animation-name: code;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+#code2 {
+    display: none;
+}
 
 /* SECTIONS */
 
@@ -188,13 +201,14 @@ nav div a:hover {
     width: 5vw;
 }
 #middleSection, #end {
-    font-size: 10px;
+    font-size: 13px;
     color: white;
 }
 #middleSection {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column: 3 / 4;
+    column-gap: 50px;
 }
 #middleSection a {
     color: white;
@@ -553,14 +567,15 @@ form {
 }
 #submit {
     font-family: 'Kulim Park', sans-serif;
-    font-weight: bold;
-    height: 7vh;
-    padding: 0 5vw;
+    font-weight: static;
+    height: 6vh;
+    padding: 0 6.7vw;
     margin: 2vh 2vw;
     grid-area: submit;
-    background-color: #0da100;
+    background-color: #12d400;
     color: #ffffff;
     border-radius: 4px;
+    text-shadow: 1px 1px 1px rgb(153, 153, 153);
 }
 
 /* Responsive View */
@@ -668,6 +683,19 @@ form {
         height: 100%;
         opacity: .5;
         animation-name: sourdough;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+    #code {
+        display: none;
+    }
+    #code2 {
+        display: initial;
+        position: fixed;
+        z-index: -1;
+        height: 100%;
+        opacity: .5;
+        animation-name: code;
         animation-duration: 30s;
         animation-iteration-count: infinite;
     }
@@ -1120,5 +1148,23 @@ form {
     }
     100% {
         opacity: 0;
+    }
+}
+@keyframes code {
+    0% {
+        opacity: 0;
+    }
+    74% {
+        opacity: 0;
+    }
+    75% {
+        opacity: .2;
+    }
+    99% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
     }
 }
