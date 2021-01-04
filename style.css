@@ -4,22 +4,27 @@ font-family: 'Kulim Park', sans-serif;
 font-family: 'Poiret One', cursive;
 
 */
-.loader {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: loader 2s linear infinite;
+#loader { 
+    border: 12px solid #f3f3f3; 
+    border-radius: 50%; 
+    border-top: 12px solid #00b7ff; 
+    width: 70px; 
+    height: 70px; 
+    animation: spin 1s linear infinite; 
 }
-  
-@keyframes loader {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-  
-
-
+@keyframes spin { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+} 
+.center { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+} 
 html {
     background: linear-gradient(180deg, rgb(231, 231, 231) 0%, rgba(255, 255, 255, 0.829) 100%), #FFFFFF;
 }
