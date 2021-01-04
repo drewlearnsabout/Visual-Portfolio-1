@@ -4,15 +4,6 @@ font-family: 'Kulim Park', sans-serif;
 font-family: 'Poiret One', cursive;
 
 */
-
-
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-  animation-play-state: paused !important;
-}
-
-
 #loader { 
     border: 12px solid #f3f3f3; 
     border-radius: 50%; 
