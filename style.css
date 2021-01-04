@@ -7,7 +7,8 @@ font-family: 'Poiret One', cursive;
 #loader { 
     width: 70px; 
     height: 70px; 
-    animation: loader 2s linear infinite; 
+    animation: loader 1s linear infinite;
+    background-image: url("AC Logo.svg");
 }
 .center { 
     position: absolute; 
