@@ -6,20 +6,20 @@ font-family: 'Poiret One', cursive;
 */
 
 
-/*.js-loading *,
+.js-loading *,
 .js-loading *:before,
 .js-loading *:after {
   animation-play-state: paused !important;
 }
-*/
+
 
 #loader { 
     border: 12px solid #f3f3f3; 
     border-radius: 50%; 
-    border-top: 12px solid #444444; 
+    border-top: 12px solid #0eacf5; 
     width: 70px; 
     height: 70px; 
-    animation: spin 1s linear infinite; 
+    animation: spin 0.8s linear infinite; 
 }
 .center { 
     position: absolute; 

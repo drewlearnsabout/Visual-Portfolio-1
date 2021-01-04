@@ -13,20 +13,3 @@ function toggle() {
     z.style.display = "none";
   }
 }
-
-document.body.classList.add('js-loading');
-window.addEventListener("load", showPage);
-
-function showPage() {
-  document.body.classList.remove('js-loading');
-}
-
-document.onreadystatechange = function() { 
-  if (document.readyState !== "complete") { 
-      document.querySelector("body").style.visibility = "hidden"; 
-      document.querySelector("#loader").style.visibility = "visible"; 
-  } else { 
-      document.querySelector("#loader").style.display = "none"; 
-      document.querySelector("body").style.visibility = "visible"; 
-  } 
-}; 

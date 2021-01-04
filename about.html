@@ -8,13 +8,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="loader" class="center"></div>
         <section id="homeBackground">
-            <img id="ForestStump" src="images/forest_stump 1.svg">
-            <img id="ForestStump2" src="images/forest_stump 2.svg">
-            <img id="meBaby" src="images/me_baby 1.svg">
-            <img id="meBaby2" src="images/me_baby 2.svg">
-            <img id="sourdough" src="images/Pasta.svg">
-            <img id="sourdough2" src="images/Sourdough 2.svg">
+            <img id="ForestStump" src="images/Forest Stump Desktop.svg">
+            <img id="ForestStump2" src="images/Forest Stump Mobile.svg">
+            <img id="meBaby" src="images/Me_baby Desktop.svg">
+            <img id="meBaby2" src="images/Me_baby Mobile.svg">
+            <img id="sourdough" src="images/Pasta Desktop.svg">
+            <img id="sourdough2" src="images/Sourdough Mobile.svg">
+            <img id="code" src="images/Code.svg">
+            <img id="code2" src="images/Code 2.svg">
         </section>
         <nav>
             <a class="logo" href="home.html"><img src="images/AC Logo.svg" alt="The letters A C for the website logo"></a>
@@ -33,7 +36,6 @@
                     Born and raised in San Diego, California.<br>
                     Live and venture through Portland, Oregon.
                 </h3>
-                <img src="images/Polaroids.svg">
                 <p>
                     The path I chose to take in my career led me to explore many disciplines and many walks of life. From childcare, research in sleep disorders, pediatric neurology and mitochondrial disease, providing behavior therapy, I made my way eventually to web and visual design.  These different stages of my life have one thing in common, and it is to make an impact on other people’s lives.
                     <br><br>
@@ -83,5 +85,27 @@
                 </footer>
             </section>
         </section>
+        <script>
+            document.body.classList.add('js-loading');
+            window.addEventListener("load", showPage);
+    
+            function showPage() {
+            document.body.classList.remove('js-loading');
+            }
+             
+            document.onreadystatechange = function() { 
+                if (document.readyState !== "complete") { 
+                    document.querySelector( 
+                      "body").style.visibility = "hidden"; 
+                    document.querySelector( 
+                      "#loader").style.visibility = "visible"; 
+                } else { 
+                    document.querySelector( 
+                      "#loader").style.display = "none"; 
+                    document.querySelector( 
+                      "body").style.visibility = "visible"; 
+                } 
+            }; 
+        </script> 
     </body>
 </html>
