@@ -2,19 +2,30 @@
 
 font-family: 'Kulim Park', sans-serif;
 font-family: 'Poiret One', cursive;
-
+00b7ff
 */
 #loader { 
-    border: 12px solid #f3f3f3; 
+    border: 5px solid #ffffff00; 
     border-radius: 50%; 
-    border-top: 12px solid #00b7ff; 
-    width: 70px; 
-    height: 70px; 
-    animation: spin 1s linear infinite; 
+    width: 40px; 
+    height: 40px; 
+    animation: spin 1s linear infinite;
 }
 @keyframes spin { 
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+        border-top: 5px solid #00b7ff;
+    }
+    60% {
+        transform: rotate(300deg);
+        border-top: 5px solid #58e48e;
+    }
     100% { 
-        transform: rotate(360deg); 
+        transform: rotate(360deg);
+        opacity: 0;
+        border-top: 5px solid #58e48e;
+        
     } 
 } 
 .center { 
