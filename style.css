@@ -5,12 +5,9 @@ font-family: 'Poiret One', cursive;
 
 */
 #loader { 
-    border: 12px solid #f3f3f3; 
-    border-radius: 50%; 
-    border-top: 12px solid #0eacf5; 
     width: 70px; 
     height: 70px; 
-    animation: spin 0.8s linear infinite; 
+    animation: loader 2s linear infinite; 
 }
 .center { 
     position: absolute; 
@@ -21,10 +18,16 @@ font-family: 'Poiret One', cursive;
     margin: auto; 
 }  
   
-@keyframes spin { 
-    100% { 
-        transform: rotate(360deg); 
+@keyframes loader { 
+    0% { 
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
     } 
+    100% {
+        opacity: 0;
+    }
 } 
 
 html {
