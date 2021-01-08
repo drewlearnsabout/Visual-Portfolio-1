@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="loader" class="center"></div>
         <nav>
             <a class="logo" href="home.html"><img src="images/AC Logo.svg" alt="The letters A C for the website logo"></a>
             <div id="navbar">
@@ -30,7 +31,7 @@
                         </div>
                     </section>
                     <section id="websitesVideos">
-                        <h3>Websites/Videos</h3>
+                        <h3>Websites/Advertising</h3>
                         <div>
                             <a href='https://forgamify.com/' target="_blank"><img id="gamifyImg" src="images/Gamify thumbnail.svg"></a>
                             <a href="https://youtu.be/uq0L-ELgzgM" target="_blank"><img id="brandingVideoButton" src="images/Branding Gif.gif"></a>
@@ -43,17 +44,8 @@
                             <a href="https://www.figma.com/proto/RHRt8yK7jT8aVMZiynYzTt/Untitled?node-id=1%3A2&scaling=min-zoom"><img id="weatherApp" src="images/Weather App gif.gif"></a>
                             <img class="prototypeImg" src="images/Hazard Sports home page prototype.svg">
                             <img class="prototypeImg" src="images/Sourdough bread mobile prototype.svg">
-                        </div>
-                    </section>
-                    <section id="visualsDesign">
-                        <h3>Visuals/Design</h3>
-                        <div>
-                            <img src="images/Form Prototype v1 1.svg">
-                            <img src="images/Penguin Branding 1.svg">
-                            <img src="images/LogIn Menu.svg">
-                            <img src="images/Shine On Consulting Logo.svg">
-                            <img src="images/Visual Personas.svg">
-                            <img src="images/Quip Display 1.svg">
+                            <img class="prototypeImg" src="images/Form Prototype v1 1.svg">
+                            <img class="prototypeImg" src="images/Quip Display 1.svg">
                         </div>
                     </section>
                 </section>
@@ -97,5 +89,16 @@
                 </footer>
             </section>
         </section>
+        <script>
+            document.onreadystatechange = function() { 
+                if (document.readyState !== "complete") { 
+                    document.querySelector("body").style.visibility = "hidden"; 
+                    document.querySelector("#loader").style.visibility = "visible"; 
+                } else { 
+                    document.querySelector("#loader").style.display = "none"; 
+                    document.querySelector("body").style.visibility = "visible"; 
+                } 
+            };
+            </script> 
     </body>
 </html>
